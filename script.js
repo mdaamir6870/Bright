@@ -1,17 +1,19 @@
 // script.js
 
-// Automatically update footer year
+// Set dynamic copyright year
 const yearSpan = document.getElementById("year");
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// Show alert on form submission
-const contactForm = document.getElementById("contactForm");
-if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
+// Optional: Smooth scroll for internal links
+const links = document.querySelectorAll("a[href^='#']");
+for (const link of links) {
+  link.addEventListener("click", function(e) {
     e.preventDefault();
-    alert("Thank you! Your message has been submitted.");
-    contactForm.reset();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   });
 }
