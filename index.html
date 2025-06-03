@@ -3,89 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bright Industrial Consultancy</title>
+  <title>Bright Industrial Consultancy Service</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- Header / Navigation -->
-  <header>
-    <div class="container nav-container">
-      <h1 class="logo">Bright Industrial Consultancy</h1>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">BRIGHT INDUSTRIAL CONSULTANCY SERVICE</h1>
       <nav>
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">More</a></li>
+          <li><a href="#contact" class="btn-outline">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay">
-      <h2>Bright Industrial Consultancy Service</h2>
-      <p>Ensure Safety. Ensure Compliance. Ensure Reliability.</p>
-      <p>Certified Experts | Advanced Testing | Nationwide Coverage</p>
-      <div class="cta-buttons">
-        <a href="#contact" class="btn primary">Talk to Our Expert</a>
-        <a href="https://wa.me/917338074810" class="btn whatsapp">Chat on WhatsApp</a>
-      </div>
+  <section class="hero" style="background-image: url('hero.jpg');">
+    <div class="hero-content">
+      <h2>Your trusted partner</h2>
+      <p>Ensuring safety and reliability in industries.</p>
+      <a href="#services" class="btn-green">View Services</a>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="intro split-section">
+    <div class="text-block">
+      <p class="tag">EXPERT INDUSTRIAL SOLUTIONS</p>
+      <h3>Your partner in safety and compliance</h3>
+      <p>At Bright Industrial Consultancy Service, we specialize in providing certified non-destructive testing (NDT), third-party inspection, and skilled manpower solutions across India. Our expert team delivers essential services such as ultrasonic testing (UT), radiographic testing (RT), dye penetrant testing, magnetic particle inspection, and heat treatment (PWHT).</p>
+      <p>We are dedicated to ensuring safety, compliance, and reliability for industries including oil & gas, power, petrochemicals, and manufacturing.</p>
+      <a href="#contact" class="link">Get in touch</a>
+    </div>
+    <div class="image-block">
+      <img src="intro.jpg" alt="Industrial Plant" />
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="section">
-    <div class="container">
-      <h3>Our Services</h3>
-      <div class="grid">
-        <div class="card">UT, RT, MPI, DPI</div>
-        <div class="card">PAUT, TOFD, EMAT</div>
-        <div class="card">Third Party Inspection</div>
-        <div class="card">Heat Treatment</div>
-        <div class="card">Engineering Consultancy</div>
+  <section id="services" class="services">
+    <p class="tag">EXPERT NDT SOLUTIONS</p>
+    <h3>Ensuring safety and compliance</h3>
+    <div class="card-row">
+      <div class="card">
+        <img src="ut.jpg" alt="UT Testing">
+        <h4>Ultrasonic testing (UT)</h4>
+        <p>A precision technique for detecting flaws in materials.</p>
+      </div>
+      <div class="card">
+        <img src="rt.jpg" alt="RT Testing">
+        <h4>Radiographic testing (RT)</h4>
+        <p>Advanced imaging technology for internal examination of materials.</p>
+      </div>
+      <div class="card">
+        <img src="dpi.jpg" alt="DPI Testing">
+        <h4>Dye penetrant testing</h4>
+        <p>An effective method for revealing surface defects.</p>
       </div>
     </div>
   </section>
 
-  <!-- Industries Section -->
-  <section id="industries" class="section light">
-    <div class="container">
-      <h3>Industries We Serve</h3>
-      <div class="grid">
-        <div class="card">Oil & Gas</div>
-        <div class="card">Power Plants</div>
-        <div class="card">Petrochemicals</div>
-        <div class="card">Pharmaceuticals</div>
-        <div class="card">Fabrication Units</div>
-      </div>
+  <!-- Gallery / Portfolio Section -->
+  <section class="gallery">
+    <p class="tag">OUR EXPERTISE</p>
+    <h3>Showcasing our industry solutions</h3>
+    <div class="gallery-grid">
+      <img src="work1.jpg" alt="Work 1">
+      <img src="work2.jpg" alt="Work 2">
+      <img src="work3.jpg" alt="Work 3">
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <footer class="footer">
     <div class="container">
-      <h3>Contact Us</h3>
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary">Send Message</button>
-      </form>
-      <p>Email: <a href="mailto:nadeem@brightndt.com">nadeem@brightndt.com</a></p>
-      <p>Phone: <a href="https://wa.me/917338074810" target="_blank">+91 73380 74810</a></p>
-      <p>Location: Mangalore, Karnataka</p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Bright Industrial Consultancy Service. All rights reserved.</p>
+      <p>Contact: <a href="mailto:nadeem@brightndt.com">nadeem@brightndt.com</a> | Phone: <a href="https://wa.me/917338074810">+91 73380 74810</a></p>
+      <p>&copy; <span id="year"></span> Bright Industrial Consultancy Service</p>
     </div>
   </footer>
-
 </body>
 </html>
