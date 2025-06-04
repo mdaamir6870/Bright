@@ -6,7 +6,7 @@ menuBtn.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// Scroll to top button logic (optional enhancement)
+// Scroll-to-top button (optional enhancement)
 const scrollBtn = document.getElementById('scrollTop');
 if (scrollBtn) {
   window.addEventListener('scroll', () => {
@@ -18,7 +18,7 @@ if (scrollBtn) {
   });
 }
 
-// Basic form submit handler (no backend connected)
+// Contact form submission handler
 const form = document.querySelector('form');
 if (form) {
   form.addEventListener('submit', function (e) {
