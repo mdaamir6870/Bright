@@ -1,19 +1,20 @@
 // script.js
 
-// Set dynamic copyright year
-const yearSpan = document.getElementById("year");
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
+// Auto update footer year
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
 
-// Optional: Smooth scroll for internal links
-const links = document.querySelectorAll("a[href^='#']");
-for (const link of links) {
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
+      window.scrollTo({
+        top: target.offsetTop - 70,
+        behavior: "smooth"
+      });
     }
   });
-}
+});
