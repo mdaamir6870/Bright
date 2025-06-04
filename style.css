@@ -1,20 +1,24 @@
-/* General Reset */
+/* Base Reset and General Styles */
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  color: #222;
-  background: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  color: #222;
+  background-color: #fff;
 }
 
 /* Navbar */
 .navbar {
-  background: #fff;
+  background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky; top: 0; z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .container {
@@ -28,6 +32,7 @@ body {
 
 .logo {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav ul {
@@ -36,120 +41,145 @@ nav ul {
   gap: 15px;
 }
 
-nav a {
-  color: #333; text-decoration: none; font-weight: 500;
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 .btn-outline {
   border: 1px solid #28a745;
-  padding: 5px 10px; border-radius: 4px; color: #28a745;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #28a745;
 }
 
 /* Hero Section */
 .hero {
   height: 60vh;
-  background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center; justify-content: center;
-  color: white;
+  background-position: center;
   position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
 }
 
 .hero-content {
-  text-align: center;
-  position: relative; z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .btn-green {
-  display: inline-block; background: #28a745;
-  color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none;
+  background: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
-/* Sections (About, Services, Projects) */
+/* Sections */
 .split-section {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
   padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
-  align-items: center;
 }
 
-.split-section img, .split-section iframe {
-  border-radius: 6px; width: 100%; height: auto;
+.split-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.text-block {
-  flex: 1;
-}
-
-.image-block {
-  flex: 1;
-}
-
-.tag {
-  color: #28a745; text-transform: uppercase;
-  margin-bottom: 10px; font-weight: bold;
-}
-
-/* Services & Industries Section */
 .services {
-  background: #f9f9f9; padding: 60px 20px; text-align: center;
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .card-row {
-  display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .card {
-  background: #fff; padding: 20px; border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 250px;
+  background: #fff;
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
-.gallery {
-  padding: 60px 20px; text-align: center;
+/* Gallery */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .gallery-grid img {
-  width: 200px; height: 150px; border-radius: 6px;
-  object-fit: cover; margin: 5px;
+  width: 200px;
+  height: 140px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* FAQ Section */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-item strong {
+  color: #28a745;
 }
 
 /* Footer */
 .footer {
-  text-align: center; background: #002f5f; color: white; padding: 20px;
+  background: #002f5f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 .footer a {
   color: #28a745;
+  text-decoration: none;
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
   .container, .split-section {
-    flex-direction: column; text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
   nav ul {
-    flex-direction: column; gap: 10px;
+    flex-direction: column;
+    gap: 8px;
   }
   .logo {
     margin-bottom: 10px;
-  }
-  .hero-content h2 {
-    font-size: 1.8rem;
   }
 }
