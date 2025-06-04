@@ -1,11 +1,9 @@
-// script.js
-
-// Auto update footer year
+// Auto-update footer year
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("year").textContent = new Date().getFullYear();
 });
 
-// Smooth scroll for internal links
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
