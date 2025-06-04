@@ -1,5 +1,3 @@
-/* style.css */
-
 /* Reset & Base */
 * {
   margin: 0;
@@ -21,7 +19,6 @@ header.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  width: 100%;
 }
 .navbar .container {
   max-width: 1200px;
@@ -62,10 +59,10 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
+  padding: 0 40px;
   color: #fff;
   position: relative;
-  padding: 0 20px;
 }
 .hero::before {
   content: "";
@@ -94,12 +91,13 @@ nav li a {
   font-weight: 600;
 }
 
-/* Split Section (About & FAQ/Map) */
+/* Split Section */
 .split-section {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 40px;
-  padding: 60px 20px;
+  padding: 60px 40px;
   max-width: 1200px;
   margin: auto;
 }
@@ -119,9 +117,9 @@ nav li a {
   border-radius: 8px;
 }
 
-/* Services & Industries Sections */
+/* Services & Industries */
 .services {
-  padding: 60px 20px;
+  padding: 60px 40px;
   background: #f9f9f9;
   text-align: center;
 }
@@ -129,7 +127,7 @@ nav li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-top: 30px;
 }
 .services .card {
@@ -138,26 +136,16 @@ nav li a {
   width: 280px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  text-align: center;
+  text-align: left;
   transition: transform 0.3s;
 }
 .services .card:hover {
   transform: translateY(-5px);
 }
-.services .card img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-.services .card p {
-  margin-top: 8px;
-  font-weight: 500;
-}
 
-/* Gallery Section */
+/* Gallery */
 .gallery {
-  padding: 60px 20px;
+  padding: 60px 40px;
   text-align: center;
 }
 .gallery-grid {
@@ -176,7 +164,7 @@ nav li a {
 
 /* FAQ Section */
 .faq-section {
-  padding: 60px 20px;
+  padding: 60px 40px;
   background: #fff;
   max-width: 900px;
   margin: auto;
@@ -197,7 +185,7 @@ nav li a {
 
 /* Footer */
 footer.footer {
-  background: #002f5f;
+  background: #111;
   color: #fff;
   text-align: center;
   padding: 30px 20px;
@@ -216,7 +204,6 @@ footer a {
   nav ul {
     flex-direction: column;
     gap: 10px;
-    margin: 10px 0;
   }
   .hero-content h2 {
     font-size: 2rem;
