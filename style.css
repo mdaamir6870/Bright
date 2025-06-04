@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: #fff;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
   color: #333;
   line-height: 1.6;
 }
@@ -15,18 +15,21 @@ body {
 /* Navbar */
 .navbar {
   background: #123456;
-  color: #fff;
+  color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .navbar h1 {
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: bold;
+  max-width: 100%;
 }
 
 .nav-links {
@@ -39,9 +42,9 @@ body {
 }
 
 .nav-links a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -50,38 +53,46 @@ body {
 
 .menu-btn {
   display: none;
-  font-size: 28px;
-  color: #fff;
+  font-size: 26px;
   background: none;
   border: none;
+  color: white;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   background: url('images/hero.jpg') center/cover no-repeat;
   height: 60vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: white;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
+  color: white;
   padding: 1rem;
 }
 
-.btn-group .btn {
-  margin: 10px;
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn {
   padding: 10px 20px;
   background: #f4b41a;
-  color: #000;
+  color: black;
   border-radius: 5px;
   text-decoration: none;
-  display: inline-block;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffaa00;
 }
 
 .whatsapp-btn {
   background: #25d366;
-  color: #fff;
+  color: white;
 }
 
 /* Sections */
@@ -89,18 +100,19 @@ body {
   padding: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 20px;
-}
-
-.section img {
-  max-width: 100%;
-  border-radius: 10px;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .section .text {
-  flex: 1;
+  flex: 1 1 300px;
+}
+
+.section img {
+  flex: 1 1 300px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .grid {
@@ -112,12 +124,19 @@ body {
 
 .service-block, .industry-block {
   text-align: center;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .service-block img, .industry-block img, .gallery-grid img {
   width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
 .service-block img:hover, .industry-block img:hover, .gallery-grid img:hover {
@@ -126,7 +145,7 @@ body {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
   width: 100%;
 }
@@ -137,32 +156,34 @@ body {
   max-width: 600px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border-radius: 5px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .contact button {
   padding: 10px;
-  width: 100%;
   background: #123456;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 .contact button:hover {
   background: #f4b41a;
+  color: black;
 }
 
 /* Footer */
 footer {
   background: #123456;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 20px 10px;
 }
@@ -171,16 +192,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 15px;
   margin-top: 10px;
   font-size: 14px;
 }
 
-.socials {
-  margin-top: 10px;
-}
-
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
