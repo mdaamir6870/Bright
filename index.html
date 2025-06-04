@@ -6,45 +6,124 @@
   <title>Bright Industrial Consultancy Service</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <script defer>
-    // Auto update year
-    document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("year").textContent = new Date().getFullYear();
-    });
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener("click", function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        if (target) {
-          window.scrollTo({ top: target.offsetTop - 70, behavior: "smooth" });
-        }
-      });
-    });
-  </script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-<!-- Navigation Bar -->
-<header class="navbar">
-  <div class="container">
-    <h1 class="logo">
-      <span style="color:#28a745; font-weight:bold;">BRIGHT</span>
-      <span style="color:#002f5f; font-weight:bold;">INDUSTRIAL</span>
-      <span style="color:#555; font-weight:bold;">CONSULTANCY SERVICE</span>
-    </h1>
-    <nav>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">
+        <span style="color:#28a745;">BRIGHT</span> <span style="color:#002f5f;">INDUSTRIAL</span> <span style="color:#555;">CONSULTANCY SERVICE</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact" class="btn-outline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image: url('hero.jpg'); height: 60vh;">
+    <div class="hero-content">
+      <h2>Your Trusted Partner</h2>
+      <p>Ensuring safety and reliability in industries.</p>
+      <a href="#services" class="btn-green">View Services</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="split-section">
+    <div class="text-block">
+      <p class="tag">ABOUT US</p>
+      <h3>Your partner in safety and compliance</h3>
+      <p>Bright Industrial Consultancy Service specializes in certified non-destructive testing (NDT), third-party inspection, and skilled manpower solutions. We deliver essential services like UT, RT, MPI, DPI, and heat treatment with a focus on safety and compliance.</p>
+    </div>
+    <div class="image-block">
+      <img src="about.jpg" alt="About" style="height:300px;" />
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <p class="tag">Our Core Services</p>
+    <h3>Ensuring safety and compliance</h3>
+    <div class="card-row">
+      <div class="card"><h4>Third-Party Inspection</h4><p>Certified manpower for QA/QC & shutdowns.</p></div>
+      <div class="card"><h4>Ultrasonic Testing (UT)</h4><p>High-frequency sound waves to detect flaws.</p></div>
+      <div class="card"><h4>Radiographic Testing (RT)</h4><p>Uses X-rays/gamma rays to detect defects.</p></div>
+      <div class="card"><h4>Dye Penetrant & MPI</h4><p>Surface & subsurface discontinuity detection.</p></div>
+      <div class="card"><h4>Heat Treatment</h4><p>PWHT and stress relief solutions.</p></div>
+      <div class="card"><h4>Consultancy</h4><p>RLA, FFS and inspection planning support.</p></div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries" class="services">
+    <p class="tag">Industries We Serve</p>
+    <ul>
+      <li>Oil & Gas</li>
+      <li>Power Generation</li>
+      <li>Petrochemicals</li>
+      <li>Manufacturing</li>
+      <li>Fertilizers</li>
+      <li>Pharmaceuticals</li>
+      <li>Pipelines</li>
+      <li>Storage Terminals</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="split-section">
+    <div class="text-block">
+      <h3>Our Key Projects</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#industries">Industries</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact" class="btn-outline">Contact</a></li>
+        <li>Major Shutdown Support</li>
+        <li>Turnaround QA/QC Deployment</li>
+        <li>Pipeline Testing Initiatives</li>
+        <li>Heat Treatment & Metallurgical Support</li>
       </ul>
-    </nav>
-  </div>
-</header>
-<!-- Remaining content stays the same -->
+    </div>
+    <div class="image-block">
+      <img src="project.jpg" alt="Projects" style="height:300px;" />
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <p class="tag">Gallery</p>
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="Gallery Image 1" />
+      <img src="gallery2.jpg" alt="Gallery Image 2" />
+      <img src="gallery3.jpg" alt="Gallery Image 3" />
+      <img src="gallery4.jpg" alt="Gallery Image 4" />
+    </div>
+  </section>
+
+  <!-- FAQ & Contact -->
+  <section id="contact" class="split-section">
+    <div class="text-block">
+      <h3>Frequently Asked Questions</h3>
+      <p><strong>What services do you offer?</strong><br>NDT, inspection, manpower, heat treatment.</p>
+      <p><strong>Are you available across India?</strong><br>Yes, with mobile expert teams.</p>
+      <p><strong>Do you handle urgent shutdowns?</strong><br>Yes, with trained QA/QC teams for deployment.</p>
+    </div>
+    <div class="image-block">
+      <iframe src="https://maps.google.com" width="100%" height="300"></iframe>
+      <p>Email: nadeem@brightndt.com</p>
+      <p>Mobile: +91 73380 74810, +91 98765 43210</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Bright Industrial Consultancy Service</p>
+  </footer>
 </body>
 </html>
