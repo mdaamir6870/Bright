@@ -1,4 +1,4 @@
-// Responsive navbar toggle
+// Toggle mobile menu
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -6,20 +6,24 @@ menuBtn.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// Scroll-to-top
-const scrollTopBtn = document.getElementById('scrollTop');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) scrollTopBtn.style.display = 'block';
-  else scrollTopBtn.style.display = 'none';
-});
+// Scroll to top button logic (optional enhancement)
+const scrollBtn = document.getElementById('scrollTop');
+if (scrollBtn) {
+  window.addEventListener('scroll', () => {
+    scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+  });
 
-scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
-// Form validation (simple)
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Message sent successfully!');
-  this.reset();
-});
+// Basic form submit handler (no backend connected)
+const form = document.querySelector('form');
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Message sent successfully!');
+    form.reset();
+  });
+}
