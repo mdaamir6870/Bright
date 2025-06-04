@@ -1,129 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright Industrial Consultancy Service providing NDT, TPI, Inspection Engineering and more.">
   <title>Bright Industrial Consultancy Service</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Navbar -->
-  <header class="navbar">
-    <div class="container">
-      <h1 class="logo">
-        <span style="color:#28a745;">BRIGHT</span> <span style="color:#002f5f;">INDUSTRIAL</span> <span style="color:#555;">CONSULTANCY SERVICE</span>
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#industries">Industries</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact" class="btn-outline">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <nav class="navbar">
+    <h1>Bright Industrial</h1>
+    <button class="menu-btn">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Hero -->
-  <section class="hero" style="background-image: url('hero.jpg'); height: 60vh;">
-    <div class="hero-content">
-      <h2>Your Trusted Partner</h2>
-      <p>Ensuring safety and reliability in industries.</p>
-      <a href="#services" class="btn-green">View Services</a>
+  <!-- Home -->
+  <section id="home" class="hero">
+    <h2>Your Reliable Consultancy Partner</h2>
+    <div class="btn-group">
+      <a href="#services" class="btn">Services</a>
+      <a href="https://wa.me/919876543210" class="btn whatsapp-btn">WhatsApp</a>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="split-section">
-    <div class="text-block">
-      <p class="tag">ABOUT US</p>
-      <h3>Your partner in safety and compliance</h3>
-      <p>Bright Industrial Consultancy Service specializes in certified non-destructive testing (NDT), third-party inspection, and skilled manpower solutions. We deliver essential services like UT, RT, MPI, DPI, and heat treatment with a focus on safety and compliance.</p>
+  <section id="about" class="section about">
+    <div class="text">
+      <h2>About Us</h2>
+      <p>Your detailed about text here.</p>
     </div>
-    <div class="image-block">
-      <img src="about.jpg" alt="About" style="height:300px;" />
-    </div>
+    <img src="images/about.jpg" alt="About Image" loading="lazy">
   </section>
 
   <!-- Services -->
-  <section id="services" class="services">
-    <p class="tag">Our Core Services</p>
-    <h3>Ensuring safety and compliance</h3>
-    <div class="card-row">
-      <div class="card"><h4>Third-Party Inspection</h4><p>Certified manpower for QA/QC & shutdowns.</p></div>
-      <div class="card"><h4>Ultrasonic Testing (UT)</h4><p>High-frequency sound waves to detect flaws.</p></div>
-      <div class="card"><h4>Radiographic Testing (RT)</h4><p>Uses X-rays/gamma rays to detect defects.</p></div>
-      <div class="card"><h4>Dye Penetrant & MPI</h4><p>Surface & subsurface discontinuity detection.</p></div>
-      <div class="card"><h4>Heat Treatment</h4><p>PWHT and stress relief solutions.</p></div>
-      <div class="card"><h4>Consultancy</h4><p>RLA, FFS and inspection planning support.</p></div>
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <!-- Add your services -->
+      <div class="service-block">
+        <img src="images/service1.jpg" alt="Service" loading="lazy">
+        <h3>Non-Destructive Testing</h3>
+      </div>
     </div>
   </section>
 
   <!-- Industries -->
-  <section id="industries" class="services">
-    <p class="tag">Industries We Serve</p>
-    <ul>
-      <li>Oil & Gas</li>
-      <li>Power Generation</li>
-      <li>Petrochemicals</li>
-      <li>Manufacturing</li>
-      <li>Fertilizers</li>
-      <li>Pharmaceuticals</li>
-      <li>Pipelines</li>
-      <li>Storage Terminals</li>
-    </ul>
+  <section id="industries" class="section industries">
+    <h2>Industries We Serve</h2>
+    <div class="grid">
+      <div class="industry-block">
+        <img src="images/industry1.jpg" alt="Industry" loading="lazy">
+        <h3>Oil & Gas</h3>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="split-section">
-    <div class="text-block">
-      <h3>Our Key Projects</h3>
-      <ul>
-        <li>Major Shutdown Support</li>
-        <li>Turnaround QA/QC Deployment</li>
-        <li>Pipeline Testing Initiatives</li>
-        <li>Heat Treatment & Metallurgical Support</li>
-      </ul>
+  <section id="projects" class="section projects">
+    <div class="text">
+      <h2>Our Projects</h2>
+      <p>Brief description of projects.</p>
     </div>
-    <div class="image-block">
-      <img src="project.jpg" alt="Projects" style="height:300px;" />
-    </div>
+    <img src="images/project.jpg" alt="Project" loading="lazy">
   </section>
 
   <!-- Gallery -->
-  <section id="gallery" class="gallery">
-    <p class="tag">Gallery</p>
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
     <div class="gallery-grid">
-      <img src="gallery1.jpg" alt="Gallery Image 1" />
-      <img src="gallery2.jpg" alt="Gallery Image 2" />
-      <img src="gallery3.jpg" alt="Gallery Image 3" />
-      <img src="gallery4.jpg" alt="Gallery Image 4" />
+      <img src="images/gallery1.jpg" alt="Gallery Image" loading="lazy">
     </div>
   </section>
 
-  <!-- FAQ & Contact -->
-  <section id="contact" class="split-section">
-    <div class="text-block">
-      <h3>Frequently Asked Questions</h3>
-      <p><strong>What services do you offer?</strong><br>NDT, inspection, manpower, heat treatment.</p>
-      <p><strong>Are you available across India?</strong><br>Yes, with mobile expert teams.</p>
-      <p><strong>Do you handle urgent shutdowns?</strong><br>Yes, with trained QA/QC teams for deployment.</p>
-    </div>
-    <div class="image-block">
-      <iframe src="https://maps.google.com" width="100%" height="300"></iframe>
-      <p>Email: nadeem@brightndt.com</p>
-      <p>Mobile: +91 73380 74810, +91 98765 43210</p>
-    </div>
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone">
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; <span id="year"></span> Bright Industrial Consultancy Service</p>
+  <footer>
+    <p>© 2025 Bright Industrial Consultancy Service</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+    </div>
   </footer>
+
+  <button id="scrollTop">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
