@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script defer>
-    // Auto update year
+    // Auto-update footer year
     document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("year").textContent = new Date().getFullYear();
     });
-    // Smooth scroll
+    // Smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener("click", function(e) {
         e.preventDefault();
@@ -24,27 +24,194 @@
   </script>
 </head>
 <body>
-<!-- Navigation Bar -->
-<header class="navbar">
-  <div class="container">
-    <h1 class="logo">
-      <span style="color:#28a745; font-weight:bold;">BRIGHT</span>
-      <span style="color:#002f5f; font-weight:bold;">INDUSTRIAL</span>
-      <span style="color:#555; font-weight:bold;">CONSULTANCY SERVICE</span>
-    </h1>
-    <nav>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">
+        <span style="color:#28a745; font-weight:bold;">BRIGHT</span>
+        <span style="color:#002f5f; font-weight:bold;">INDUSTRIAL</span>
+        <span style="color:#555; font-weight:bold;">CONSULTANCY SERVICE</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact" class="btn-outline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('hero.jpg'); height: 80vh;">
+    <div class="hero-content">
+      <h2>Your Trusted Partner</h2>
+      <p>Ensuring safety and reliability in industries.</p>
+      <a href="#services" class="btn-green">View Services</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="split-section">
+    <div class="text-block">
+      <p class="tag">ABOUT US</p>
+      <h3>Your Partner in Safety and Compliance</h3>
+      <p>
+        Bright Industrial Consultancy Service specializes in certified non-destructive testing (NDT), third-party inspection, and skilled manpower solutions. We deliver essential services like UT, RT, MPI, DPI, and heat treatment with a focus on safety and compliance.
+      </p>
+    </div>
+    <div class="image-block">
+      <img src="about.jpg" alt="About Us" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <p class="tag">Our Core Services</p>
+    <h3>Ensuring Safety and Compliance</h3>
+    <div class="card-row">
+      <div class="card">
+        <img src="service1.jpg" alt="Third-Party Inspection" />
+        <h4>Third-Party Inspection</h4>
+        <p>Certified manpower for QA/QC & shutdowns.</p>
+      </div>
+      <div class="card">
+        <img src="service2.jpg" alt="Ultrasonic Testing (UT)" />
+        <h4>Ultrasonic Testing (UT)</h4>
+        <p>High-frequency sound waves to detect flaws.</p>
+      </div>
+      <div class="card">
+        <img src="service3.jpg" alt="Radiographic Testing (RT)" />
+        <h4>Radiographic Testing (RT)</h4>
+        <p>Uses X-rays/gamma rays to detect defects.</p>
+      </div>
+      <div class="card">
+        <img src="service4.jpg" alt="Dye Penetrant & MPI" />
+        <h4>Dye Penetrant & MPI</h4>
+        <p>Surface & subsurface discontinuity detection.</p>
+      </div>
+      <div class="card">
+        <img src="service5.jpg" alt="Heat Treatment" />
+        <h4>Heat Treatment</h4>
+        <p>PWHT and stress relief solutions.</p>
+      </div>
+      <div class="card">
+        <img src="service6.jpg" alt="Consultancy" />
+        <h4>Consultancy</h4>
+        <p>RLA, FFS and inspection planning support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section id="industries" class="services">
+    <p class="tag">Industries We Serve</p>
+    <div class="card-row">
+      <div class="card">
+        <img src="industry1.jpg" alt="Oil & Gas" />
+        <p>Oil & Gas</p>
+      </div>
+      <div class="card">
+        <img src="industry2.jpg" alt="Power Generation" />
+        <p>Power Generation</p>
+      </div>
+      <div class="card">
+        <img src="industry3.jpg" alt="Petrochemicals" />
+        <p>Petrochemicals</p>
+      </div>
+      <div class="card">
+        <img src="industry4.jpg" alt="Manufacturing" />
+        <p>Manufacturing</p>
+      </div>
+      <div class="card">
+        <img src="industry5.jpg" alt="Fertilizers" />
+        <p>Fertilizers</p>
+      </div>
+      <div class="card">
+        <img src="industry6.jpg" alt="Pharmaceuticals" />
+        <p>Pharmaceuticals</p>
+      </div>
+      <div class="card">
+        <img src="industry7.jpg" alt="Pipelines" />
+        <p>Pipelines</p>
+      </div>
+      <div class="card">
+        <img src="industry8.jpg" alt="Storage Terminals" />
+        <p>Storage Terminals</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="split-section">
+    <div class="text-block">
+      <p class="tag">PROJECTS</p>
+      <h3>Highlighted Project Areas</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#industries">Industries</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact" class="btn-outline">Contact</a></li>
+        <li>Major Shutdown Support</li>
+        <li>Turnaround QA/QC Deployment</li>
+        <li>Pipeline Testing Initiatives</li>
+        <li>Heat Treatment & Metallurgical Support</li>
       </ul>
-    </nav>
-  </div>
-</header>
-<!-- Remaining content stays the same -->
+    </div>
+    <div class="image-block">
+      <img src="project.jpg" alt="Projects" />
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <p class="tag">GALLERY</p>
+    <h3>Showcasing Our Industry Solutions</h3>
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="Gallery Image 1" />
+      <img src="gallery2.jpg" alt="Gallery Image 2" />
+      <img src="gallery3.jpg" alt="Gallery Image 3" />
+      <img src="gallery4.jpg" alt="Gallery Image 4" />
+    </div>
+  </section>
+
+  <!-- FAQ & Map Section -->
+  <section class="split-section">
+    <div class="text-block">
+      <p class="tag">Frequently Asked Questions</p>
+      <div class="faq-item">
+        <strong>What services do you offer?</strong>
+        <p>We provide NDT, inspection, manpower, and heat treatment solutions.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Are you available across India?</strong>
+        <p>Yes, we operate pan-India with mobile expert teams.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Do you handle urgent shutdowns?</strong>
+        <p>Yes, our QA/QC teams are trained for fast deployment in emergencies.</p>
+      </div>
+    </div>
+    <div class="image-block">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.3265716594973!2d74.83387687512694!3d12.93981998737238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b3c02f2cfab%3A0xdde1a27a0d260e17!2sKana%2C%20Mangalore%2C%20Karnataka%20575014!5e0!3m2!1sen!2sin!4v1685441663589!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style="border:0; border-radius:6px;"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p>Email: <a href="mailto:nadeem@brightndt.com">nadeem@brightndt.com</a></p>
+      <p>Phone 1: +91 73380 74810 | Phone 2: +91 98765 43210</p>
+      <p>Location: Door No. 717/3, RBC Villa, Kana, Iddya Village, Mangalore Taluk, Karnataka – 575014</p>
+      <p>&copy; <span id="year"></span> <span style="color:#28a745;">BRIGHT</span> <span style="color:#002f5f;">INDUSTRIAL</span> <span style="color:#555;">CONSULTANCY SERVICE</span></p>
+    </div>
+  </footer>
 </body>
 </html>
