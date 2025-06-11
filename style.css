@@ -136,10 +136,10 @@ body {
 }
 
 /* About Section Styling */
-/* === About Section (Dark Professional) === */
+/* === About Section (Dark Layout) === */
 .about-section {
   padding: 60px 10%;
-  background-color: #0f1c2e; /* Navy/charcoal dark */
+  background-color: #0f1c2e;
   color: #f0f0f0;
 }
 
@@ -147,8 +147,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .about-text {
@@ -159,7 +159,7 @@ body {
 
 .about-text h2 {
   font-size: 2.2rem;
-  color: #f4b41a; /* Accent yellow */
+  color: #f4b41a;
   margin-bottom: 20px;
 }
 
@@ -169,27 +169,31 @@ body {
 }
 
 .about-image img {
-  max-width: 300px;
   width: 100%;
+  max-width: 280px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Mobile responsive */
+/* Responsive for Mobile */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-image {
-    text-align: center;
-    margin-top: 20px;
-  }
-
   .about-text {
     flex: 1 1 100%;
+  }
+
+  .about-image {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .about-image img {
+    max-width: 220px;
   }
 }
 /* Grids */
