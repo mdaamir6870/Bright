@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bright Industrial Consultancy Service</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Industrial Consultancy Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
   <!-- Navbar -->
   <nav class="navbar">
-    <h1>
-      <span style="color:#28a745">BRIGHT</span>
-      <span style="color:#f4b41a">INDUSTRIAL</span>
-      <span style="color:#ffffff">CONSULTANCY SERVICE</span>
-    </h1>
+    <h1>Bright Industrial Consultancy Service</h1>
     <button class="menu-btn">☰</button>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
@@ -28,7 +25,7 @@
   </nav>
 
   <!-- Hero -->
-  <section id="home" class="hero" style="background-image: url('hero.jpg');">
+  <section id="home" class="hero">
     <h2>Quality & Precision in Every Inspection</h2>
     <div class="btn-group">
       <a href="#services" class="btn">Our Services</a>
@@ -47,13 +44,80 @@
     <img src="about.jpg" alt="About Image">
   </section>
 
-  <!-- (Other sections like Services, Industries, Projects, Gallery, Contact remain unchanged) -->
+  <!-- Services -->
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="service-block"><img src="images/ndt.jpg" alt="NDT"><h3>NDT</h3><p>Ultrasonic, Radiography, MPT, LPT, VT</p></div>
+      <div class="service-block"><img src="images/tpi.jpg" alt="Third-Party Inspection"><h3>Third-Party Inspection</h3><p>Client-side audit solutions</p></div>
+      <div class="service-block"><img src="images/manpower.jpg" alt="Certified Manpower"><h3>Certified Manpower</h3><p>Level II Technicians, Engineers</p></div>
+      <div class="service-block"><img src="images/shutdown.jpg" alt="Shutdown Inspection"><h3>Shutdown Inspection</h3><p>Critical outages support</p></div>
+      <div class="service-block"><img src="images/engineering.jpg" alt="Inspection Engineering"><h3>Inspection Engineering</h3><p>QA/QC execution</p></div>
+      <div class="service-block"><img src="images/testing.jpg" alt="Advanced Testing"><h3>Advanced Testing</h3><p>EMAT, PAUT, TOFD</p></div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries" class="section industries">
+    <h2>Industries We Serve</h2>
+    <div class="grid">
+      <div class="industry-block"><img src="images/oilgas.jpg" alt="Oil & Gas"><h3>Oil & Gas</h3></div>
+      <div class="industry-block"><img src="images/construction.jpg" alt="Construction"><h3>Construction</h3></div>
+      <div class="industry-block"><img src="images/manufacturing.jpg" alt="Manufacturing"><h3>Manufacturing</h3></div>
+      <div class="industry-block"><img src="images/heavy.jpg" alt="Heavy Engineering"><h3>Heavy Engineering</h3></div>
+      <div class="industry-block"><img src="images/petrochemical.jpg" alt="Petrochemical"><h3>Petrochemical</h3></div>
+      <div class="industry-block"><img src="images/energy.jpg" alt="Energy & Utilities"><h3>Energy & Utilities</h3></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <div class="text">
+      <h2>Project Highlights</h2>
+      <ul>
+        <li>ABC Refinery – Turnaround NDT (2024)</li>
+        <li>DEF Power Ltd – Transformer Inspection (2023)</li>
+        <li>XYZ Infra – QA/QC for Flyover (2022)</li>
+      </ul>
+    </div>
+    <img src="images/project.jpg" alt="Project">
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Gallery">
+      <img src="images/gallery2.jpg" alt="Gallery">
+      <img src="images/gallery3.jpg" alt="Gallery">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" value="John Doe" required>
+      <input type="email" placeholder="Email" value="johndoe@example.com" required>
+      <input type="tel" placeholder="Phone" value="+91-9876543210">
+      <input type="text" placeholder="Company" value="ABC Industries Pvt Ltd">
+      <textarea placeholder="Message">Interested in your services for shutdown inspection.</textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> Bright Industrial Consultancy Service</p>
+    <p>© 2025 Bright Industrial Consultancy Service</p>
+    <div class="footer-cols">
+      <div><strong>Email:</strong> contact@brightindustrial.com</div>
+      <div><strong>Phone:</strong> +91-1234567890</div>
+      <div><strong>Address:</strong> 123 Industrial Lane, Bengaluru</div>
+      <div class="socials">LinkedIn | Twitter | Facebook</div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
