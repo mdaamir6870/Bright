@@ -60,10 +60,9 @@ body {
   color: white;
 }
 
-/* Hero Section */
 .hero {
-  background: url('hero.jpg.png') center/cover no-repeat;
-  height: 60vh;
+  background: url('hero.jpg.png') center center / cover no-repeat;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +70,22 @@ body {
   text-align: center;
   color: white;
   padding: 1rem;
+  position: relative;
 }
+
+/* Optional: Add overlay for better text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+}
+
+.hero h2, .btn-group {
+  z-index: 2;
+}
+
 
 .btn-group {
   margin-top: 20px;
