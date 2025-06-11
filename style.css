@@ -62,7 +62,7 @@ body {
 
 .hero {
   background: url('hero.jpg') center top no-repeat;
-  background-size: contain; /* or try background-size: auto 100%; */
+  background-size: cover; /* 👈 Revert to 'cover' */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -71,6 +71,7 @@ body {
   text-align: center;
   color: white;
   padding: 1rem;
+  position: relative;
 }
 
 /* Optional: Add overlay for better text contrast */
