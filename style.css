@@ -136,10 +136,11 @@ body {
 }
 
 /* About Section Styling */
-/* Refined About Section */
+/* === About Section (Dark Professional) === */
 .about-section {
   padding: 60px 10%;
-  background-color: #f9f9f9;
+  background-color: #0f1c2e; /* Navy/charcoal dark */
+  color: #f0f0f0;
 }
 
 .about-container {
@@ -152,31 +153,30 @@ body {
 
 .about-text {
   flex: 1 1 55%;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
-  color: #333;
 }
 
 .about-text h2 {
   font-size: 2.2rem;
-  color: #123456;
+  color: #f4b41a; /* Accent yellow */
   margin-bottom: 20px;
 }
 
 .about-image {
-  flex: 1 1 35%;
+  flex: 1 1 40%;
   text-align: right;
 }
 
 .about-image img {
-  width: 100%;
   max-width: 300px;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* Responsive */
+/* Mobile responsive */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
