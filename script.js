@@ -1,29 +1,16 @@
-// Toggle mobile menu
-const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector('.nav-links');
+// Auto update footer year
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+  // Mobile nav toggle
+  const menuBtn = document.querySelector('.menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 });
-
-// Scroll-to-top button (optional enhancement)
-const scrollBtn = document.getElementById('scrollTop');
-if (scrollBtn) {
-  window.addEventListener('scroll', () => {
-    scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
-  });
-
-  scrollBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-}
-
-// Contact form submission handler
-const form = document.querySelector('form');
-if (form) {
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Message sent successfully!');
-    form.reset();
-  });
-}
