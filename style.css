@@ -204,6 +204,7 @@ body {
 }
 
 /* Our Core Services Section */
+/* Our Core Services Section with Images */
 .services {
   background: linear-gradient(to right, #0f1c2e, #1b2b42);
   padding: 60px 40px;
@@ -228,7 +229,7 @@ body {
   background: rgba(255, 255, 255, 0.05);
   padding: 25px;
   border-radius: 10px;
-  text-align: left;
+  text-align: center;
   transition: transform 0.3s ease;
   color: #ffffff;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
@@ -236,6 +237,14 @@ body {
 
 .service-block:hover {
   transform: translateY(-6px);
+}
+
+.service-block img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .service-block h3 {
