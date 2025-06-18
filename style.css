@@ -105,11 +105,10 @@ body {
   background: #f4f4f4;
 }
 .about-section {
-  background: #f4f7fc; /* Soft, clean professional blue-gray */
-  color: #1a1a1a;       /* Dark text */
+  background-color: #f4f7fc !important;  /* Soft light blue */
+  color: #1a1a1a !important;             /* Dark grey text */
   padding: 60px 10%;
 }
-
 .about-container {
   display: flex;
   flex-wrap: wrap;
