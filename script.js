@@ -1,17 +1,45 @@
-// Mobile menu toggle
-document.querySelector('.menu-btn').onclick = () => document.querySelector('.nav-links').classList.toggle('active');
+// Toggle mobile menu
+const menuBtn = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('.nav-links');
 
-// Scroll button
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Scroll-to-top button
 const scrollBtn = document.getElementById('scrollTop');
-window.onscroll = () => scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
-scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
-// FAQ toggle
-document.querySelectorAll('.faq-btn').forEach(btn => {
-  btn.onclick = () => {
-    const content = btn.nextElementSibling;
-    const open = content.style.maxHeight;
-    document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
-    content.style.maxHeight = open ? null : content.scrollHeight + 'px';
-  };
+// Contact form submission
+const form = document.querySelector('form');
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you! Your message has been sent.');
+    form.reset();
+  });
+}
+
+// Reveal animations on scroll (optional)
+const revealTargets = document.querySelectorAll('.section, .service-block, .testimonial');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+revealTargets.forEach(el => {
+  el.style.opacity = 0;
+  el.style.transform = 'translateY(40px)';
+  el.style.transition = 'all 0.6s ease-out';
+  observer.observe(el);
 });
