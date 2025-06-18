@@ -6,7 +6,7 @@ menuBtn?.addEventListener('click', () => {
   navLinks?.classList.toggle('active');
 });
 
-// Close menu when a nav link is clicked
+// Close mobile menu after clicking a nav link
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     if (navLinks?.classList.contains('active')) {
@@ -28,7 +28,7 @@ scrollBtn?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Contact Form Handler
+// Contact Form Handling
 const form = document.querySelector('form');
 form?.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -36,7 +36,7 @@ form?.addEventListener('submit', (e) => {
   form.reset();
 });
 
-// Reveal Animation on Scroll
+// Scroll Reveal Animations
 const revealTargets = document.querySelectorAll('.section, .service-block, .testimonial');
 
 const observer = new IntersectionObserver(entries => {
@@ -54,4 +54,14 @@ revealTargets.forEach(el => {
   el.style.transform = 'translateY(40px)';
   el.style.transition = 'all 0.6s ease-out';
   observer.observe(el);
+});
+
+// Optional FAQ toggle handler
+document.querySelectorAll('.faq-btn')?.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const open = content.style.maxHeight;
+    document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+    content.style.maxHeight = open ? null : content.scrollHeight + 'px';
+  });
 });
