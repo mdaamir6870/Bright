@@ -104,20 +104,23 @@ body {
 .about-section, .services, .industries, .partners, .projects, .testimonials, .gallery, .contact {
   background: #f4f4f4;
 }
+/* About Dark Theme Section */
 .about-section.dark-theme {
   background: linear-gradient(to bottom right, #0f172a, #1e293b);
   color: #f1f5f9;
-  padding: 60px 10%;
+}
+
+.about-section.dark-theme h2 {
+  color: #facc15;
 }
 
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
+  padding: 40px 0;
 }
 
 .about-text {
@@ -126,30 +129,9 @@ body {
   line-height: 1.7;
 }
 
-.about-text h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: #e2e8f0;
-}
-
 .about-text p {
   margin-bottom: 15px;
   color: #cbd5e1;
-}
-
-.about-text .btn-light {
-  margin-top: 20px;
-  display: inline-block;
-  background-color: #facc15;
-  color: #1e293b;
-  padding: 12px 28px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.about-text .btn-light:hover {
-  background-color: #eab308;
 }
 
 .about-image {
@@ -159,15 +141,28 @@ body {
 
 .about-image img {
   max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.about-image img:hover {
-  transform: translateY(-5px);
+/* Button Light on Dark Background */
+.btn-light {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #facc15;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
+.btn-light:hover {
+  background-color: #e0b306;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
