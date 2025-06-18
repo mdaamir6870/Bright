@@ -169,25 +169,63 @@ body {
     text-align: center;
   }
 }
-.service-block {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  text-align: center;
+.services-section.dark-theme {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #f1f5f9;
+  padding: 60px 10%;
 }
+
+.services-section h2 {
+  text-align: center;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-block {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
 .service-block img {
   width: 100%;
-  max-height: 150px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
+
 .service-block h3 {
-  margin: 10px 0;
+  color: #facc15;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
 }
-.industry-block img {
-  width: 100%;
-  border-radius: 8px;
+
+.service-block p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .testimonial-cards {
   display: flex;
