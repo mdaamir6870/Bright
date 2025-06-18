@@ -239,6 +239,66 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Industries Section – Dark Theme */
+.industries-section.dark-theme {
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: #f1f5f9;
+  padding: 60px 10%;
+}
+
+.industries-section h2 {
+  text-align: center;
+  color: #facc15;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Grid layout */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* Cards */
+.industry-block {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industry-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Images */
+.industry-block img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Titles */
+.industry-block h3 {
+  color: #facc15;
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .testimonial-cards {
   display: flex;
   flex-wrap: wrap;
