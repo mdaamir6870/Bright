@@ -6,6 +6,15 @@ menuBtn?.addEventListener('click', () => {
   navLinks?.classList.toggle('active');
 });
 
+// Close mobile menu after clicking a nav link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (navLinks?.classList.contains('active')) {
+      navLinks.classList.remove('active');
+    }
+  });
+});
+
 // Scroll-to-Top Button
 const scrollBtn = document.getElementById('scrollTop');
 
@@ -47,7 +56,7 @@ revealTargets.forEach(el => {
   observer.observe(el);
 });
 
-// Optional FAQ toggle handler (if you add FAQ later)
+// Optional FAQ toggle handler
 document.querySelectorAll('.faq-btn')?.forEach(btn => {
   btn.addEventListener('click', () => {
     const content = btn.nextElementSibling;
