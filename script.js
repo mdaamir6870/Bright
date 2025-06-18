@@ -1,32 +1,35 @@
-// Toggle mobile menu
+// Mobile Menu Toggle
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+menuBtn?.addEventListener('click', () => {
+  navLinks?.classList.toggle('active');
 });
 
-// Scroll-to-top button
+// Scroll-to-Top Button
 const scrollBtn = document.getElementById('scrollTop');
+
 window.addEventListener('scroll', () => {
-  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  if (scrollBtn) {
+    scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  }
 });
-scrollBtn.addEventListener('click', () => {
+
+scrollBtn?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Contact form submission
+// Contact Form Handling
 const form = document.querySelector('form');
-if (form) {
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('Thank you! Your message has been sent.');
-    form.reset();
-  });
-}
+form?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Thank you! Your message has been sent.');
+  form.reset();
+});
 
-// Reveal animations on scroll (optional)
+// Scroll Reveal Animations
 const revealTargets = document.querySelectorAll('.section, .service-block, .testimonial');
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -42,4 +45,14 @@ revealTargets.forEach(el => {
   el.style.transform = 'translateY(40px)';
   el.style.transition = 'all 0.6s ease-out';
   observer.observe(el);
+});
+
+// Optional FAQ toggle handler (if you add FAQ later)
+document.querySelectorAll('.faq-btn')?.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
+    const open = content.style.maxHeight;
+    document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+    content.style.maxHeight = open ? null : content.scrollHeight + 'px';
+  });
 });
