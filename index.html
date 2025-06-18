@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Bright Industrial Consultancy Service</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">Bright ICS</div>
-    <button class="menu-btn">☰</button>
+    <button class="menu-btn" aria-label="Toggle Menu">☰</button>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -23,62 +25,84 @@
     </ul>
   </nav>
 
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-      <h2>Quality & Precision in Every Inspection</h2>
-      <p>Empowering industries with top-tier NDT, TPI, drone inspections & certified manpower across India.</p>
+      <h1>Quality & Precision in Every Inspection</h1>
+      <p>Top-tier NDT, TPI, drone inspections & certified manpower across India.</p>
       <div class="btn-group">
         <a href="#services" class="btn">Our Services</a>
-        <a href="https://wa.me/917338074810" class="btn whatsapp-btn" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/917338074810" class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </div>
     </div>
   </section>
 
+  <!-- About -->
   <section id="about" class="about-section section">
     <div class="about-container">
       <div class="about-text">
         <h2>About Us</h2>
-        <p>We specialize in NDT, TPI, EMAT, PAUT, TOFD, and drone-based inspections. Certified manpower available for shutdowns across India.</p>
+        <p>We specialize in NDT, TPI, PAUT, EMAT, TOFD & drone-based inspections with certified manpower support for industrial maintenance.</p>
       </div>
       <div class="about-image">
-        <img src="about.jpg.png" alt="Bright Industrial Team" />
+        <img src="about.jpg.png" alt="Our Team" />
       </div>
     </div>
   </section>
 
+  <!-- Services -->
   <section id="services" class="services section">
     <h2>Our Core Services</h2>
     <div class="grid">
-      <div class="service-block"><img src="ndt.jpg.png" alt="NDT"><h3>NDT</h3><p>UT, RT, MPT, DPT & VT testing.</p></div>
-      <div class="service-block"><img src="images/tpi.jpg" alt="TPI"><h3>Third-Party Inspection</h3><p>Independent quality checks.</p></div>
-      <div class="service-block"><img src="manpower.jpg.png" alt="Certified Manpower"><h3>Certified Manpower</h3><p>Skilled inspection manpower.</p></div>
-      <div class="service-block"><img src="images/advanced-ndt.jpg" alt="Advanced NDT"><h3>Advanced NDT</h3><p>PAUT, TOFD, EMAT Testing.</p></div>
+      <div class="service-block">
+        <img src="ndt.jpg.png" alt="NDT">
+        <h3>NDT</h3>
+        <p>UT, RT, MPT, DPT & VT inspection techniques.</p>
+      </div>
+      <div class="service-block">
+        <img src="images/tpi.jpg" alt="TPI">
+        <h3>Third-Party Inspection</h3>
+        <p>Assuring standards and quality with independent audits.</p>
+      </div>
+      <div class="service-block">
+        <img src="manpower.jpg.png" alt="Manpower">
+        <h3>Certified Manpower</h3>
+        <p>Deploying qualified engineers and inspectors nationwide.</p>
+      </div>
+      <div class="service-block">
+        <img src="images/advanced-ndt.jpg" alt="Advanced NDT">
+        <h3>Advanced NDT</h3>
+        <p>EMAT, PAUT, TOFD for critical assets and conditions.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Industries -->
   <section id="industries" class="industries section">
     <h2>Industries We Serve</h2>
     <div class="grid">
-      <div class="industry-block"><img src="images/oilgas.jpg"><h3>Oil & Gas</h3></div>
-      <div class="industry-block"><img src="images/construction.jpg"><h3>Construction</h3></div>
-      <div class="industry-block"><img src="images/manufacturing.jpg"><h3>Manufacturing</h3></div>
-      <div class="industry-block"><img src="images/heavy.jpg"><h3>Heavy Engineering</h3></div>
-      <div class="industry-block"><img src="images/petrochemical.jpg"><h3>Petrochemical</h3></div>
-      <div class="industry-block"><img src="images/energy.jpg"><h3>Energy</h3></div>
+      <div class="industry-block"><img src="images/oilgas.jpg" alt="Oil & Gas"><h3>Oil & Gas</h3></div>
+      <div class="industry-block"><img src="images/construction.jpg" alt="Construction"><h3>Construction</h3></div>
+      <div class="industry-block"><img src="images/manufacturing.jpg" alt="Manufacturing"><h3>Manufacturing</h3></div>
+      <div class="industry-block"><img src="images/heavy.jpg" alt="Heavy Engineering"><h3>Heavy Engineering</h3></div>
+      <div class="industry-block"><img src="images/petrochemical.jpg" alt="Petrochemical"><h3>Petrochemical</h3></div>
+      <div class="industry-block"><img src="images/energy.jpg" alt="Energy"><h3>Energy</h3></div>
     </div>
   </section>
 
+  <!-- Partners -->
   <section id="partners" class="partners section">
     <h2>Our Trusted Partners</h2>
     <div class="partners-grid">
-      <img src="images/partner1.png">
-      <img src="images/partner2.png">
-      <img src="images/partner3.png">
-      <img src="images/partner4.png">
+      <img src="images/partner1.png" alt="Partner 1">
+      <img src="images/partner2.png" alt="Partner 2">
+      <img src="images/partner3.png" alt="Partner 3">
+      <img src="images/partner4.png" alt="Partner 4">
     </div>
   </section>
 
+  <!-- Projects -->
   <section id="projects" class="projects section">
     <h2>Project Highlights</h2>
     <ul>
@@ -88,23 +112,26 @@
     </ul>
   </section>
 
+  <!-- Testimonials -->
   <section id="testimonials" class="testimonials section">
     <h2>What Our Clients Say</h2>
     <div class="testimonial-cards">
-      <div class="testimonial"><p>"Bright ICS delivered precise QA/QC."</p><h4>– Ramesh Kumar</h4></div>
-      <div class="testimonial"><p>"Great reports & efficient team!"</p><h4>– Priya Singh</h4></div>
+      <div class="testimonial"><p>"Great QA/QC turnaround and detailed inspection!"</p><h4>– Ramesh Kumar</h4></div>
+      <div class="testimonial"><p>"Quick deployment and professional reports."</p><h4>– Priya Singh</h4></div>
     </div>
   </section>
 
+  <!-- Gallery -->
   <section id="gallery" class="gallery section">
     <h2>Gallery</h2>
     <div class="gallery-grid">
-      <img src="images/gallery1.jpg">
-      <img src="images/gallery2.jpg">
-      <img src="images/gallery3.jpg">
+      <img src="images/gallery1.jpg" alt="Gallery image 1">
+      <img src="images/gallery2.jpg" alt="Gallery image 2">
+      <img src="images/gallery3.jpg" alt="Gallery image 3">
     </div>
   </section>
 
+  <!-- CTA -->
   <section id="cta" class="cta section">
     <div class="cta-content">
       <h2>Ready to Elevate Your Project Quality?</h2>
@@ -112,22 +139,25 @@
     </div>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="contact section">
     <h2>Contact Us</h2>
     <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="Phone" />
-      <input type="text" placeholder="Company" />
-      <textarea placeholder="Message" required></textarea>
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone">
+      <input type="text" name="company" placeholder="Company">
+      <textarea name="message" placeholder="Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <button id="scrollTop">⬆</button>
+  <!-- Scroll Button -->
+  <button id="scrollTop" title="Back to Top">⬆</button>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Bright Industrial Consultancy Service</p>
+    <p>&copy; 2025 Bright Industrial Consultancy Service</p>
     <div class="footer-cols">
       <div><strong>Email:</strong> contact@brightindustrial.com</div>
       <div><strong>Phone:</strong> +91-1234567890</div>
