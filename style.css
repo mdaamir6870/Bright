@@ -105,31 +105,43 @@ body {
   background: #f4f4f4;
 }
 .about-section {
-  background: #edf2f8; /* light steel blue-ish */
+  background: #f4f7fc; /* Soft, clean professional blue-gray */
   color: #1a1a1a;
 }
+
 .about-container {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
   align-items: center;
   justify-content: space-between;
 }
+
 .about-text {
   flex: 1 1 400px;
   font-size: 1.1rem;
+  line-height: 1.7;
 }
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0a2a43; /* Deep navy for titles */
+}
+
 .about-text p {
   margin-bottom: 15px;
 }
+
 .about-image {
   flex: 1 1 350px;
   text-align: center;
 }
+
 .about-image img {
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .service-block {
   background: white;
