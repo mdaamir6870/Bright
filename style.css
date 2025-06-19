@@ -299,50 +299,33 @@ body {
   }
 }
 /* Partners Section – Dark Theme with Texture */
-.partners-section.dark-theme {
-  background: linear-gradient(to bottom right, #0f172a, #1e293b),
-              url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-repeat: repeat;
-  color: #f1f5f9;
-  padding: 60px 10%;
-}
-
-.partners-section h2 {
-  text-align: center;
-  color: #facc15;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
-}
-
-.partners-grid {
+.partners-grid.vertical-logos {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
+  padding-top: 20px;
 }
 
-.partners-grid img {
-  max-width: 180px;
+.partners-grid.vertical-logos img {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   filter: grayscale(70%);
-  transition: filter 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s, filter 0.3s;
 }
 
-.partners-grid img:hover {
+.partners-grid.vertical-logos img:hover {
   filter: none;
   transform: scale(1.05);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .partners-grid {
-    gap: 20px;
-  }
-  .partners-grid img {
-    max-width: 140px;
+@media (min-width: 768px) {
+  .partners-grid.vertical-logos {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 .testimonial-cards {
