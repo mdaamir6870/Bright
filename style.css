@@ -299,34 +299,38 @@ body {
   }
 }
 /* Partners Section – Dark Theme with Texture */
-.partners-grid.vertical-logos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Compact Dark Partners Section */
+.partners-section.compact-dark {
+  background: #111d2e;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.partners-section.compact-dark h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #f4b41a;
+}
+
+.partners-compact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 25px;
-  padding-top: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
-.partners-grid.vertical-logos img {
-  max-width: 160px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  filter: grayscale(70%);
-  transition: transform 0.3s, filter 0.3s;
+.partner-logo img {
+  max-height: 60px;
+  width: auto;
+  filter: grayscale(60%);
+  transition: all 0.3s ease-in-out;
 }
 
-.partners-grid.vertical-logos img:hover {
+.partner-logo img:hover {
   filter: none;
-  transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-  .partners-grid.vertical-logos {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  transform: scale(1.08);
 }
 .testimonial-cards {
   display: flex;
