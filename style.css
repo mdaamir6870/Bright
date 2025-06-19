@@ -332,56 +332,78 @@ body {
   filter: none;
   transform: scale(1.08);
 }
-.testimonial-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+/* Accent Background for Projects Section */
+.accent-background {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  color: #f9fafb;
+  padding: 50px 10%;
+  position: relative;
+  overflow: hidden;
 }
-.projects-quick.dark-theme {
-  background: #111d2e;
-  color: #f1f5f9;
-  padding: 40px 10%;
-  text-align: center;
+
+/* Subtle diagonal stripes overlay */
+.accent-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.02) 1px,
+    transparent 1px,
+    transparent 10px
+  );
+  pointer-events: none;
 }
 
 .projects-quick h2 {
-  color: #f4b41a;
-  font-size: 1.8rem;
+  color: #fbbf24;
+  font-size: 2rem;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .projects-stats {
-  font-size: 1.05rem;
-  color: #cbd5e1;
-  margin-bottom: 20px;
+  color: #d1d5db;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .projects-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px 50px;
+  gap: 20px 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .proj-item {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 1rem;
   background: #1e293b;
-  padding: 10px 15px;
+  padding: 12px 18px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background 0.3s;
 }
 
 .proj-item .icon {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+}
+
+.proj-item .label {
+  font-size: 1rem;
+  color: #e5e7eb;
 }
 
 .proj-item:hover {
   transform: translateY(-4px);
+  background: #273449;
 }
 
 @media (max-width: 600px) {
@@ -389,6 +411,12 @@ body {
     flex-direction: column;
     gap: 15px;
   }
+}
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 .testimonial {
   background: white;
