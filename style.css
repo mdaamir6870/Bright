@@ -555,27 +555,6 @@ body {
   background: #f4b41a;
   color: black;
 }
-.footer {
-  background: linear-gradient(135deg, #84fab0, #8fd3f4);
-  color: #111;
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.footer p {
-  margin: 0.5rem 0;
-}
-
-.footer a {
-  color: #0645AD;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
   .nav-links {
     display: none;
     flex-direction: column;
