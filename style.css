@@ -515,12 +515,14 @@ body {
 .contact-form .btn:hover {
   background: #00c6ff;
 }
+/* Call to Action */
 .cta {
   background: #123456;
   color: white;
   text-align: center;
   padding: 60px 20px;
 }
+
 .cta .btn-primary {
   background: #f4b41a;
   color: black;
@@ -529,20 +531,26 @@ body {
   font-size: 1.1rem;
   transition: background 0.3s;
 }
+
 .cta .btn-primary:hover {
   background: #ffaa00;
 }
+
+/* Contact Form */
 .contact form {
   max-width: 600px;
   margin: auto;
 }
-.contact input, .contact textarea {
+
+.contact input,
+.contact textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .contact button {
   background: #123456;
   color: white;
@@ -551,10 +559,13 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .contact button:hover {
   background: #f4b41a;
   color: black;
 }
+
+/* Footer */
 .footer {
   background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
   color: #1a1a1a;
@@ -594,26 +605,29 @@ body {
   text-decoration: underline;
 }
 
+/* Navigation - Responsive Mobile Nav Links */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background: #123456;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Responsive Layout for Footer */
 @media (min-width: 600px) {
   .footer-cols {
     grid-template-columns: 1fr 1fr;
-  }
-}
-  
-.nav-links {
-    display: none;
-    flex-direction: column;
-    background: #123456;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .nav-links li {
-    margin: 10px 0;
-    text-align: center;
   }
 }
