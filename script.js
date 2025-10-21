@@ -22,7 +22,6 @@ if (menuBtn && navLinks) {
 
 // ========== Scroll-to-Top ==========
 const scrollBtn = document.getElementById('scrollTop');
-
 let ticking = false;
 window.addEventListener('scroll', () => {
   if (!scrollBtn) return;
@@ -39,27 +38,22 @@ scrollBtn?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ========== Contact Form Handling ==========
-// Hybrid: Validate + show feedback, then allow FormSubmit.co to proceed
+// ========== Contact Form Handling (Keep simple validation) ==========
 const form = document.getElementById('contact-form');
 form?.addEventListener('submit', (e) => {
-  // Client-side validation
   const name = form.querySelector('#name')?.value.trim();
   const email = form.querySelector('#email')?.value.trim();
   const message = form.querySelector('#message')?.value.trim();
-
   if (!name || !email || !message) {
     e.preventDefault();
     alert('Please fill out Name, Email, and Message.');
     return;
   }
-  // Optionally show a toast or spinner here
-  // Do not preventDefault to let FormSubmit.co send the form
+  // Let FormSubmit.co handle sending
 });
 
 // ========== Scroll Reveal ==========
 const revealTargets = document.querySelectorAll('.section, .service-block, .industry-block, .proj-item, .gallery-grid img');
-
 const observer = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -77,8 +71,8 @@ revealTargets.forEach(el => {
   observer.observe(el);
 });
 
-// ========== Optional FAQ (if added later) ==========
-document.querySelectorAll('.faq-btn').forEach(btn => {
+// Optional FAQ handler (if elements exist)
+document.querySelectorAll('.faq-btn')?.forEach(btn => {
   btn.addEventListener('click', () => {
     const content = btn.nextElementSibling;
     const open = content?.style.maxHeight;
