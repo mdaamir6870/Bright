@@ -1,26 +1,37 @@
-// Mobile Menu Toggle
+// ========== Mobile Menu ==========
 const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.getElementById('nav-links');
 
-menuBtn?.addEventListener('click', () => {
-  navLinks?.classList.toggle('active');
-});
-
-// Close mobile menu after clicking a nav link
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    if (navLinks?.classList.contains('active')) {
-      navLinks.classList.remove('active');
-    }
+if (menuBtn && navLinks) {
+  menuBtn.setAttribute('aria-expanded', 'false');
+  menuBtn.addEventListener('click', () => {
+    const isActive = navLinks.classList.toggle('active');
+    menuBtn.setAttribute('aria-expanded', String(isActive));
   });
-});
 
-// Scroll-to-Top Button
+  // Close menu on nav link click
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+}
+
+// ========== Scroll-to-Top ==========
 const scrollBtn = document.getElementById('scrollTop');
 
+let ticking = false;
 window.addEventListener('scroll', () => {
-  if (scrollBtn) {
-    scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+  if (!scrollBtn) return;
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+      ticking = false;
+    });
+    ticking = true;
   }
 });
 
@@ -28,26 +39,36 @@ scrollBtn?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Contact Form Handling
-const form = document.querySelector('form');
+// ========== Contact Form Handling ==========
+// Hybrid: Validate + show feedback, then allow FormSubmit.co to proceed
+const form = document.getElementById('contact-form');
 form?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('Thank you! Your message has been sent.');
-  form.reset();
+  // Client-side validation
+  const name = form.querySelector('#name')?.value.trim();
+  const email = form.querySelector('#email')?.value.trim();
+  const message = form.querySelector('#message')?.value.trim();
+
+  if (!name || !email || !message) {
+    e.preventDefault();
+    alert('Please fill out Name, Email, and Message.');
+    return;
+  }
+  // Optionally show a toast or spinner here
+  // Do not preventDefault to let FormSubmit.co send the form
 });
 
-// Scroll Reveal Animations
-const revealTargets = document.querySelectorAll('.section, .service-block, .testimonial');
+// ========== Scroll Reveal ==========
+const revealTargets = document.querySelectorAll('.section, .service-block, .industry-block, .proj-item, .gallery-grid img');
 
-const observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.style.opacity = 1;
       entry.target.style.transform = 'translateY(0)';
-      observer.unobserve(entry.target);
+      obs.unobserve(entry.target);
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
 
 revealTargets.forEach(el => {
   el.style.opacity = 0;
@@ -56,12 +77,12 @@ revealTargets.forEach(el => {
   observer.observe(el);
 });
 
-// Optional FAQ toggle handler
-document.querySelectorAll('.faq-btn')?.forEach(btn => {
+// ========== Optional FAQ (if added later) ==========
+document.querySelectorAll('.faq-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const content = btn.nextElementSibling;
-    const open = content.style.maxHeight;
+    const open = content?.style.maxHeight;
     document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
-    content.style.maxHeight = open ? null : content.scrollHeight + 'px';
+    if (content) content.style.maxHeight = open ? null : content.scrollHeight + 'px';
   });
 });
