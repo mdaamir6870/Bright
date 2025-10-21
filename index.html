@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Bright Industrial Consultancy Service</title>
+  <meta name="description" content="Bright Industrial Consultancy Service provides expert NDT, TPI, drone inspections, and certified manpower across India. Quality and precision in every inspection." />
+  <link rel="canonical" href="https://www.example.com/" />
+  <link rel="icon" href="/favicon.ico" />
+  <title>Bright Industrial Consultancy Service | NDT • TPI • Drone Inspection</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">BRIGHT</div>
-    <button class="menu-btn" aria-label="Toggle Menu">☰</button>
-    <ul class="nav-links">
+  <header class="navbar" role="banner">
+    <div class="logo" aria-label="Bright ICS logo">BRIGHT</div>
+    <button class="menu-btn" aria-label="Toggle menu" aria-controls="nav-links" aria-expanded="false">☰</button>
+    <ul id="nav-links" class="nav-links" role="navigation" aria-label="Primary">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -23,185 +24,170 @@
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Quality & Precision in Every Inspection</h1>
-      <p>Top-tier NDT, TPI, drone inspections & certified manpower across India.</p>
-      <div class="btn-group">
-        <a href="#services" class="btn">Our Services</a>
-        <a href="https://wa.me/917338074810" class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Quality & Precision in Every Inspection</h1>
+        <p>Top-tier NDT, TPI, drone inspections, and certified manpower across India.</p>
+        <div class="btn-group">
+          <a href="#services" class="btn">Our Services</a>
+          <a href="https://wa.me/917338074810" class="btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">WhatsApp</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-<!-- About -->
-<section id="about" class="section about-section dark-theme">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About Us</h2>
-      <p>
-        Bright ICS is a trusted leader in Non-Destructive Testing (NDT), Third-Party Inspection (TPI), and advanced asset evaluation services across India.
-      </p>
-      <p>
-        Backed by certified engineers, we deliver precision inspections, QA/QC audits, and drone-enabled analysis for industries including oil & gas, construction, and energy.
-      </p>
-      <p>
-        Our commitment to safety, accuracy, and reliability ensures top-tier service — from manpower deployment to critical infrastructure inspections.
-      </p>
-      <a href="#contact" class="btn btn-light">Get in Touch</a>
-    </div>
-    <div class="about-image">
-      <img src="about.jpg.png" alt="Our Expert Team at Work" />
-    </div>
-  </div>
-</section>
-
-  <!-- Services -->
- <!-- Services -->
-<section id="services" class="section services-section dark-theme textured-bg">
-  <h2>Our Core Services</h2>
-  <div class="grid services-grid">
-    <div class="service-block">
-      <img src="ndt.jpg.png" alt="Non-Destructive Testing" />
-      <h3>Non-Destructive Testing (NDT)</h3>
-      <p>Comprehensive inspections using UT, RT, MPT, DPT & VT to identify defects without damaging assets.</p>
-    </div>
-    <div class="service-block">
-      <img src="tpi.jpg" alt="Third-Party Inspection" />
-      <h3>Third‑Party Inspection (TPI)</h3>
-      <p>Objective quality audits ensuring compliance with industry standards and regulatory frameworks.</p>
-    </div>
-    <div class="service-block">
-      <img src="manpower.jpg.png" alt="Certified Manpower Supply" />
-      <h3>Certified Manpower Supply</h3>
-      <p>Deployment of vetted QA/QC engineers and technicians to support inspection and maintenance projects.</p>
-    </div>
-    <div class="service-block">
-      <img src="advanced.jpg.png" alt="Advanced NDT Techniques" />
-      <h3>Advanced NDT Techniques</h3>
-      <p>Specialized methods like EMAT, PAUT & TOFD for precise evaluation of critical and complex components.</p>
-    </div>
-  </div>
-</section>
-
-  <!-- Industries -->
-  <!-- Industries -->
-<section id="industries" class="section industries-section dark-theme textured-bg">
-  <h2>Industries We Serve</h2>
-  <div class="grid industries-grid">
-    <div class="industry-block">
-      <img src="oil.jpg.jpg" alt="Oil & Gas Industry">
-      <h3>Oil & Gas</h3>
-    </div>
-    <div class="industry-block">
-      <img src="constructio.jpg.jpg" alt="Construction Industry">
-      <h3>Construction</h3>
-    </div>
-    <div class="industry-block">
-      <img src="component.jpg.jpg" alt="Manufacturing Industry">
-      <h3>Manufacturing</h3>
-    <div class="industry-block">
-      <img src="petro.jpg.png" alt="Petrochemical Industry">
-      <h3>Petrochemical</h3>
-    </div>
-    <div class="industry-block">
-      <img src="power.jpg.png" alt="Energy & Utilities Industry">
-      <h3>Energy & Utilities</h3>
-    </div>
-  </div>
-</section>
-  <!-- Partners -->
-<!-- Partners -->
-<section id="partners" class="section partners-section compact-dark">
-  <h2>Our Trusted Partners</h2>
-  <div class="partners-compact-grid">
-    <div class="partner-logo"><img src="mrpl.jpg" alt="MRPL Logo" /></div>
-    <div class="partner-logo"><img src="ongc.jpg" alt="ONGC Logo" /></div>
-    <div class="partner-logo"><img src="iocl.jpg" alt="IOCL Logo" /></div>
-    <div class="partner-logo"><img src="Bharat-Petroleum.png" alt="BPCL Logo" /></div>
-  </div>
-</section>
- <!-- Projects -->
-<section id="projects" class="section projects-quick accent-background">
-  <div class="projects-quick-content">
-    <h2>Project Expertise</h2>
-    <p class="projects-stats">✔️ Over 30+ successful projects completed across these services:</p>
-    <div class="projects-icons">
-      <div class="proj-item">
-        <span class="icon">🔍</span>
-        <span class="label">NDT (UT, RT, MT, PT, VT)</span>
+    <!-- About -->
+    <section id="about" class="section about-section dark-theme" aria-labelledby="about-title">
+      <div class="about-container">
+        <div class="about-text">
+          <h2 id="about-title">About Us</h2>
+          <p>Bright ICS is a trusted leader in Non-Destructive Testing (NDT), Third-Party Inspection (TPI), and advanced asset evaluation services across India.</p>
+          <p>Backed by certified engineers, we deliver precision inspections, QA/QC audits, and drone-enabled analysis for industries including oil & gas, construction, and energy.</p>
+          <p>Our commitment to safety, accuracy, and reliability ensures top-tier service — from manpower deployment to critical infrastructure inspections.</p>
+          <a href="#contact" class="btn btn-light">Get in Touch</a>
+        </div>
+        <div class="about-image">
+          <img src="about.jpg" alt="Bright ICS engineers conducting an on-site inspection" loading="lazy" width="640" height="426" />
+        </div>
       </div>
-      <div class="proj-item">
-        <span class="icon">📋</span>
-        <span class="label">Third‑Party Inspection (TPI)</span>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services-section dark-theme textured-bg" aria-labelledby="services-title">
+      <h2 id="services-title">Our Core Services</h2>
+      <div class="grid services-grid">
+        <article class="service-block">
+          <img src="ndt.jpg" alt="Non-destructive testing on pipeline using UT" loading="lazy" width="640" height="360" />
+          <h3>Non-Destructive Testing (NDT)</h3>
+          <p>Comprehensive inspections using UT, RT, MPT, DPT & VT to identify defects without damaging assets.</p>
+        </article>
+        <article class="service-block">
+          <img src="tpi.jpg" alt="Third-party inspector auditing fabrication quality" loading="lazy" width="640" height="360" />
+          <h3>Third‑Party Inspection (TPI)</h3>
+          <p>Objective quality audits ensuring compliance with industry standards and regulatory frameworks.</p>
+        </article>
+        <article class="service-block">
+          <img src="manpower.jpg" alt="Certified QA/QC manpower at industrial site" loading="lazy" width="640" height="360" />
+          <h3>Certified Manpower Supply</h3>
+          <p>Deployment of vetted QA/QC engineers and technicians to support inspection and maintenance projects.</p>
+        </article>
+        <article class="service-block">
+          <img src="advanced.jpg" alt="Advanced NDT techniques including PAUT & TOFD" loading="lazy" width="640" height="360" />
+          <h3>Advanced NDT Techniques</h3>
+          <p>Specialized methods like EMAT, PAUT & TOFD for precise evaluation of critical and complex components.</p>
+        </article>
       </div>
-      <div class="proj-item">
-        <span class="icon">📐</span>
-        <span class="label">PAUT & EMAT</span>
+    </section>
+
+    <!-- Industries -->
+    <section id="industries" class="section industries-section dark-theme textured-bg" aria-labelledby="industries-title">
+      <h2 id="industries-title">Industries We Serve</h2>
+      <div class="grid industries-grid">
+        <div class="industry-block">
+          <img src="oil-gas.jpg" alt="Oil and gas refinery infrastructure" loading="lazy" width="480" height="280" />
+          <h3>Oil & Gas</h3>
+        </div>
+        <div class="industry-block">
+          <img src="construction.jpg" alt="Construction site structural steel" loading="lazy" width="480" height="280" />
+          <h3>Construction</h3>
+        </div>
+        <div class="industry-block">
+          <img src="manufacturing.jpg" alt="Manufacturing plant assembly line" loading="lazy" width="480" height="280" />
+          <h3>Manufacturing</h3>
+        </div>
+        <div class="industry-block">
+          <img src="petrochemical.jpg" alt="Petrochemical processing facility" loading="lazy" width="480" height="280" />
+          <h3>Petrochemical</h3>
+        </div>
+        <div class="industry-block">
+          <img src="power-utilities.jpg" alt="Power generation and utilities infrastructure" loading="lazy" width="480" height="280" />
+          <h3>Energy & Utilities</h3>
+        </div>
       </div>
-      <div class="proj-item">
-        <span class="icon">🚁</span>
-        <span class="label">Drone‑Based Surveys</span>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="section partners-section compact-dark" aria-labelledby="partners-title">
+      <h2 id="partners-title">Our Trusted Partners</h2>
+      <div class="partners-compact-grid">
+        <div class="partner-logo"><img src="mrpl.jpg" alt="MRPL" loading="lazy" width="180" height="60" /></div>
+        <div class="partner-logo"><img src="ongc.jpg" alt="ONGC" loading="lazy" width="180" height="60" /></div>
+        <div class="partner-logo"><img src="iocl.jpg" alt="IOCL" loading="lazy" width="180" height="60" /></div>
+        <div class="partner-logo"><img src="bpcl.png" alt="BPCL" loading="lazy" width="180" height="60" /></div>
       </div>
-      <div class="proj-item">
-        <span class="icon">👷</span>
-        <span class="label">Certified Manpower Deployment</span>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects-quick accent-background" aria-labelledby="projects-title">
+      <div class="projects-quick-content">
+        <h2 id="projects-title">Project Expertise</h2>
+        <p class="projects-stats">✔️ Over 30+ successful projects completed across these services:</p>
+        <div class="projects-icons">
+          <div class="proj-item"><span class="icon">🔍</span><span class="label">NDT (UT, RT, MT, PT, VT)</span></div>
+          <div class="proj-item"><span class="icon">📋</span><span class="label">Third‑Party Inspection (TPI)</span></div>
+          <div class="proj-item"><span class="icon">📐</span><span class="label">PAUT & EMAT</span></div>
+          <div class="proj-item"><span class="icon">🚁</span><span class="label">Drone‑Based Surveys</span></div>
+          <div class="proj-item"><span class="icon">👷</span><span class="label">Certified Manpower Deployment</span></div>
+        </div>
       </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Gallery</h2>
+      <div class="gallery-grid">
+        <img src="gallery-1.jpg" alt="On-site ultrasonic testing" loading="lazy" width="600" height="400" />
+        <img src="gallery-2.jpg" alt="TPI documentation and auditing" loading="lazy" width="600" height="400" />
+        <img src="gallery-3.jpg" alt="Drone inspection over storage tanks" loading="lazy" width="600" height="400" />
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Us</h2>
+
+      <!-- Use either JS handler OR FormSubmit.co. JS shows success then submits. -->
+      <form id="contact-form" action="https://formsubmit.co/hrbrightinspection@gmail.com" method="POST" class="contact-form" novalidate>
+        <input type="hidden" name="_subject" value="New Contact Form Submission" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+        <label for="name" class="sr-only">Name</label>
+        <input id="name" name="name" type="text" placeholder="Name" required />
+
+        <label for="email" class="sr-only">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" required />
+
+        <label for="phone" class="sr-only">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="Phone" />
+
+        <label for="company" class="sr-only">Company</label>
+        <input id="company" name="company" type="text" placeholder="Company" />
+
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <button id="scrollTop" title="Back to Top" aria-label="Back to top">⬆</button>
+
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 Bright Industrial Consultancy Service</p>
+    <div class="footer-cols">
+      <div><strong>Email:</strong> <a href="mailto:hrbrightinspection@gmail.com">hrbrightinspection@gmail.com</a></div>
+      <div><strong>Phone:</strong> <a href="tel:+917338074810">+91-7338074810</a></div>
+      <div><strong>Address:</strong> Surathkal, Mangalore, 575014</div>
+      <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-public-handle/" target="_blank" rel="noopener noreferrer">Visit Profile</a></div>
     </div>
-  </div>
-</section>
+  </footer>
 
-  <!-- Gallery -->
-<section id="gallery" class="section gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <img src="img2.jpg" alt="Gallery image 1" />
-    <img src="img1.jpg" alt="Gallery image 2" />
-    <img src="img3.jpg" alt="Gallery image 3" />
-  </div>
-</section>
-  <!-- Contact -->
- <!-- Contact -->
-<section id="contact" class="section contact">
-  <h2>Contact Us</h2>
-  <form action="https://formsubmit.co/hrbrightinspection@gmail.com" method="POST" class="contact-form">
-    <input type="hidden" name="_subject" value="New Contact Form Submission">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-
-    <input type="text" name="name" placeholder="Name" required />
-    <input type="email" name="email" placeholder="Email" required />
-    <input type="tel" name="phone" placeholder="Phone" />
-    <input type="text" name="company" placeholder="Company" />
-    <textarea name="message" placeholder="Your Message..." required></textarea>
-
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-</section>
-
-  <!-- Scroll to Top Button -->
-  <button id="scrollTop" title="Back to Top">⬆</button>
-
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2025 Bright Industrial Consultancy Service</p>
-  <div class="footer-cols">
-    <div><strong>Email:</strong> hrbrightinspection@gmail.com</div>
-    <div><strong>Phone:</strong> +91-7338074810</div>
-    <div><strong>Address:</strong> Surathkal, Mangalore, 575014</div>
-    <div><strong>LinkedIn:</strong> 
-      <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B8fkdEBNfTvu0w89YwmEJ4A%3D%3D" target="_blank">
-        Visit Profile
-      </a>
-    </div>
-  </div>
-</footer>
-  <!-- Script -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
