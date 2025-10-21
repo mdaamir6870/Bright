@@ -27,7 +27,7 @@
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- Hero (image-less: gradient background) -->
     <section id="home" class="hero" aria-label="Hero">
       <div class="overlay"></div>
       <div class="hero-content">
@@ -51,7 +51,10 @@
           <a href="#contact" class="btn btn-light">Get in Touch</a>
         </div>
         <div class="about-image">
-          <img src="about.jpg.png" alt="Bright ICS engineers conducting an on-site inspection" loading="lazy" width="640" height="426" />
+          <!-- Optional: image placeholder or real image later -->
+          <div aria-label="Image coming soon" class="image-placeholder" style="width:100%; height:260px; border-radius:12px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1;">
+            Image coming soon
+          </div>
         </div>
       </div>
     </section>
@@ -61,22 +64,30 @@
       <h2 id="services-title">Our Core Services</h2>
       <div class="grid services-grid">
         <article class="service-block">
-          <img src="ndt.jpg.png" alt="Non-destructive testing on pipeline using UT" loading="lazy" width="640" height="360" />
+          <div class="image-placeholder" style="width:100%; height:160px; border-radius:8px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            NDT
+          </div>
           <h3>Non-Destructive Testing (NDT)</h3>
           <p>Comprehensive inspections using UT, RT, MPT, DPT & VT to identify defects without damaging assets.</p>
         </article>
         <article class="service-block">
-          <img src="tpi.jpg" alt="Third-party inspector auditing fabrication quality" loading="lazy" width="640" height="360" />
+          <div class="image-placeholder" style="width:100%; height:160px; border-radius:8px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            TPI
+          </div>
           <h3>Third‑Party Inspection (TPI)</h3>
           <p>Objective quality audits ensuring compliance with industry standards and regulatory frameworks.</p>
         </article>
         <article class="service-block">
-          <img src="manpower.jpg.png" alt="Certified QA/QC manpower at industrial site" loading="lazy" width="640" height="360" />
+          <div class="image-placeholder" style="width:100%; height:160px; border-radius:8px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            Manpower
+          </div>
           <h3>Certified Manpower Supply</h3>
           <p>Deployment of vetted QA/QC engineers and technicians to support inspection and maintenance projects.</p>
         </article>
         <article class="service-block">
-          <img src="advanced.jpg.png" alt="Advanced NDT techniques including PAUT & TOFD" loading="lazy" width="640" height="360" />
+          <div class="image-placeholder" style="width:100%; height:160px; border-radius:8px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            Advanced NDT
+          </div>
           <h3>Advanced NDT Techniques</h3>
           <p>Specialized methods like EMAT, PAUT & TOFD for precise evaluation of critical and complex components.</p>
         </article>
@@ -88,23 +99,33 @@
       <h2 id="industries-title">Industries We Serve</h2>
       <div class="grid industries-grid">
         <div class="industry-block">
-          <img src="oil.jpg.jpg" alt="Oil and gas refinery infrastructure" loading="lazy" width="480" height="280" />
+          <div class="image-placeholder" style="width:100%; height:140px; border-radius:6px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            Oil & Gas
+          </div>
           <h3>Oil & Gas</h3>
         </div>
         <div class="industry-block">
-          <img src="constructio.jpg.jpg" alt="Construction site structural steel" loading="lazy" width="480" height="280" />
+          <div class="image-placeholder" style="width:100%; height:140px; border-radius:6px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            Construction
+          </div>
           <h3>Construction</h3>
         </div>
         <div class="industry-block">
-          <img src="component.jpg.jpg" alt="Manufacturing plant assembly line" loading="lazy" width="480" height="280" />
+          <div class="image-placeholder" style="width:100%; height:140px; border-radius:6px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            Manufacturing
+          </div>
           <h3>Manufacturing</h3>
         </div>
         <div class="industry-block">
-          <img src="petro.jpg.png" alt="Petrochemical processing facility" loading="lazy" width="480" height="280" />
+          <div class="image-placeholder" style="width:100%; height:140px; border-radius:6px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            Petrochemical
+          </div>
           <h3>Petrochemical</h3>
         </div>
         <div class="industry-block">
-          <img src="power.jpg.png" alt="Power generation and utilities infrastructure" loading="lazy" width="480" height="280" />
+          <div class="image-placeholder" style="width:100%; height:140px; border-radius:6px; background:#1f2a44; display:flex; align-items:center; justify-content:center; color:#cbd5e1; margin-bottom:12px;">
+            Energy & Utilities
+          </div>
           <h3>Energy & Utilities</h3>
         </div>
       </div>
@@ -117,7 +138,7 @@
         <div class="partner-logo"><img src="mrpl.jpg" alt="MRPL" loading="lazy" width="180" height="60" /></div>
         <div class="partner-logo"><img src="ongc.jpg" alt="ONGC" loading="lazy" width="180" height="60" /></div>
         <div class="partner-logo"><img src="iocl.jpg" alt="IOCL" loading="lazy" width="180" height="60" /></div>
-        <div class="partner-logo"><img src="Bharat-Petroleum.png" alt="BPCL" loading="lazy" width="180" height="60" /></div>
+        <div class="partner-logo"><img src="bpcl.png" alt="BPCL" loading="lazy" width="180" height="60" /></div>
       </div>
     </section>
 
@@ -140,9 +161,9 @@
     <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
       <h2 id="gallery-title">Gallery</h2>
       <div class="gallery-grid">
-        <img src="img2.jpg" alt="Gallery image 1" loading="lazy" width="600" height="400" />
-        <img src="img1.jpg" alt="Gallery image 2" loading="lazy" width="600" height="400" />
-        <img src="img3.jpg" alt="Gallery image 3" loading="lazy" width="600" height="400" />
+        <img src="gallery-1.jpg" alt="On-site ultrasonic testing" loading="lazy" width="600" height="400" />
+        <img src="gallery-2.jpg" alt="TPI documentation and auditing" loading="lazy" width="600" height="400" />
+        <img src="gallery-3.jpg" alt="Drone inspection over storage tanks" loading="lazy" width="600" height="400" />
       </div>
     </section>
 
